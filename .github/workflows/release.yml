@@ -1,0 +1,23 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  release:
+    uses: FrogPak/releaser/.github/workflows/release.yml@main
+    permissions:
+      contents: write
+      id-token: write
+    # Ponds to update at once after a release; needs the POND_TOKEN secret.
+    # with:
+    #   ponds: |
+    #     OWNER/POND
+    secrets:
+      POND_TOKEN: ${{ secrets.POND_TOKEN }}

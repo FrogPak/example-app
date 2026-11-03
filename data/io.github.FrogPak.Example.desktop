@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=FrogPak Example
+Comment=A minimal app published through FrogPak
+Exec=frogpak-example
+Icon=io.github.FrogPak.Example
+Terminal=false
+Type=Application
+Categories=Utility;

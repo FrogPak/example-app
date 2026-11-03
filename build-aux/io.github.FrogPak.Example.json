@@ -1,0 +1,31 @@
+{
+  "id": "io.github.FrogPak.Example",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "50",
+  "sdk": "org.gnome.Sdk",
+  "command": "frogpak-example",
+  "finish-args": [
+    "--socket=wayland",
+    "--socket=fallback-x11",
+    "--share=ipc",
+    "--device=dri"
+  ],
+  "modules": [
+    {
+      "name": "frogpak-example",
+      "buildsystem": "simple",
+      "build-commands": [
+        "install -Dm755 src/frogpak-example /app/bin/frogpak-example",
+        "install -Dm644 data/io.github.FrogPak.Example.desktop /app/share/applications/io.github.FrogPak.Example.desktop",
+        "install -Dm644 data/io.github.FrogPak.Example.metainfo.xml /app/share/metainfo/io.github.FrogPak.Example.metainfo.xml",
+        "install -Dm644 data/io.github.FrogPak.Example.svg /app/share/icons/hicolor/scalable/apps/io.github.FrogPak.Example.svg"
+      ],
+      "sources": [
+        {
+          "type": "dir",
+          "path": ".."
+        }
+      ]
+    }
+  ]
+}

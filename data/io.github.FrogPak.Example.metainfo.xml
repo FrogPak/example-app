@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.FrogPak.Example</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>0BSD</project_license>
+  <name>FrogPak Example</name>
+  <summary>A minimal app published through FrogPak</summary>
+  <description>
+    <p>Shows how an app gets from a GitHub repository into a FrogPak pond: the FrogPak releaser builds and releases it, and a pond publishes it as a signed Flatpak remote.</p>
+  </description>
+  <developer id="io.github.frogpak">
+    <name>FrogPak contributors</name>
+  </developer>
+  <url type="homepage">https://github.com/FrogPak/example-app</url>
+  <launchable type="desktop-id">io.github.FrogPak.Example.desktop</launchable>
+  <content_rating type="oars-1.1"/>
+  <branding>
+    <color type="primary" scheme_preference="light">#99c1f1</color>
+    <color type="primary" scheme_preference="dark">#1a5fb4</color>
+  </branding>
+  <releases>
+    <release version="0.1.0" date="2026-11-03">
+      <description>
+        <p>First release.</p>
+      </description>
+    </release>
+  </releases>
+</component>
