@@ -19,6 +19,11 @@
     <color type="primary" scheme_preference="dark">#1a5fb4</color>
   </branding>
   <releases>
+    <release version="0.1.2" date="2026-11-03">
+      <description>
+        <p>Pond trigger test release... attempt 2.</p>
+      </description>
+    </release>
     <release version="0.1.1" date="2026-11-03">
       <description>
         <p>Pond trigger test release.</p>
