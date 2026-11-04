@@ -6,7 +6,7 @@
   <name>FrogPak Example</name>
   <summary>A minimal app published through FrogPak</summary>
   <description>
-    <p>Shows how an app gets from a GitHub repository into a FrogPak pond: the FrogPak releaser builds and releases it, and a pond publishes it as a signed Flatpak remote.</p>
+    <p>Shows how an app gets from a GitHub repository into a FrogPak Pond: the FrogPak releaser builds and releases it, and a Pond publishes it as a signed Flatpak remote.</p>
   </description>
   <developer id="io.github.frogpak">
     <name>FrogPak contributors</name>

@@ -17,8 +17,8 @@ class Example(Adw.Application):
     def do_activate(self):
         page = Adw.StatusPage(
             icon_name=APP_ID,
-            title="Hello from a pond",
-            description="Built by the FrogPak releaser and installed from a FrogPak pond.",
+            title="Hello from a Pond",
+            description="Built by the FrogPak releaser and installed from a FrogPak Pond.",
         )
         view = Adw.ToolbarView(content=page)
         view.add_top_bar(Adw.HeaderBar())
