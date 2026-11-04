@@ -19,6 +19,6 @@ jobs:
       # Ponds to update at once after a release, one owner/repository per line.
       # Needs the POND_TOKEN secret. Lines starting with # are ignored.
       ponds: |
-        FrogPak/frogpak-test
+        FrogPak/demo
     secrets:
       POND_TOKEN: ${{ secrets.POND_TOKEN }}
