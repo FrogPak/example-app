@@ -11,7 +11,11 @@
   <developer id="io.github.frogpak">
     <name>FrogPak contributors</name>
   </developer>
-  <url type="homepage">https://github.com/FrogPak/example-app</url>
+  <!-- A Pond's card links to the homepage, bug tracker and donation page, when they are https. -->
+  <url type="homepage">https://frogpak.org</url>
+  <url type="bugtracker">https://github.com/FrogPak/example-app/issues</url>
+  <url type="donation">https://conservationallies.org/partners/madagasikara-voakajy/</url>
+  <url type="vcs-browser">https://github.com/FrogPak/example-app</url>
   <launchable type="desktop-id">io.github.FrogPak.Example.desktop</launchable>
   <content_rating type="oars-1.1"/>
   <branding>
@@ -19,6 +23,11 @@
     <color type="primary" scheme_preference="dark">#1a5fb4</color>
   </branding>
   <releases>
+    <release version="0.1.3" date="2026-11-05">
+      <description>
+        <p>A new icon, and a homepage, issue tracker and donation page, so a Pond's card links to each.</p>
+      </description>
+    </release>
     <release version="0.1.2" date="2026-11-03">
       <description>
         <p>Pond trigger test release... attempt 2.</p>
