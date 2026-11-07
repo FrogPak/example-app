@@ -16,6 +16,9 @@ jobs:
       contents: write
       id-token: write
     with:
+      # Uncomment when this repository is a push mirror of Forgejo or another forge,
+      # whose tags then come from .forgejo/workflows/tag.yml:
+      #create-tags: false
       # Ponds to update at once after a release, one owner/repository per line.
       # Needs the POND_TOKEN secret. Lines starting with # are ignored.
       ponds: |

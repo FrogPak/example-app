@@ -23,6 +23,7 @@ A Pond's card for the app comes from its bundle's metainfo and its repository:
 Links change on the card only after a new release, since the Pond reads the metainfo inside the published bundle.
 - `data/io.github.FrogPak.Example.svg`: the icon the Pond shows.
 - `.github/workflows/release.yml`: calls the releaser.
+- `.forgejo/workflows/tag.yml`: only for an app developed on Forgejo and mirrored to GitHub; see below. GitHub ignores it.
 
 ## Releasing
 
@@ -43,3 +44,12 @@ apps:
   io.github.FrogPak.Example:
     repo: FrogPak/example-app
 ```
+
+## Developing on Forgejo, mirrored to GitHub
+
+If the app lives on a Forgejo server that push-mirrors it to GitHub, tags must be created on Forgejo; a tag the releaser creates on GitHub is deleted by the mirror's next sync, and its release goes back to being a draft. This repository is ready for that:
+
+1. In `.github/workflows/release.yml`, uncomment `create-tags: false`.
+2. In `.forgejo/workflows/tag.yml`, set `runs-on` to a label of one of your Forgejo runners.
+
+Releasing stays the same: add a release to the metainfo and push to Forgejo. Forgejo tags it, the mirror carries the tag to GitHub, and the releaser builds and releases it. The [releaser's README](https://github.com/FrogPak/releaser#mirrored-repositories) has the details.
